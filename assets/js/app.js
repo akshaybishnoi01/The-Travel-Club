@@ -126,3 +126,17 @@ window.addEventListener("load", function () {
     loader.style.display = "none";
   }, 2000);
 });
+
+
+$(document).ready(function(){
+  $(window).scroll(function(){
+  	var scroll = $(window).scrollTop();
+	  if (scroll > 300) {
+	    $(".nav-bg").css("background" , "#081324");
+	  }
+
+	  else{
+		  $(".nav-bg").css("background" , "transparent");  	
+	  }
+  })
+})

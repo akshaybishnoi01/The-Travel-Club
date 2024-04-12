@@ -873,6 +873,24 @@
   left: 35%;
 }
 
+.nav-bg {
+  position:fixed;
+  top:0;
+  background:transparent;
+  width:100%;
+  transition: all .6s;
+}
+
+.blue{
+  position:fixed;
+  top:0;
+  background: #081324;
+  width:100%;
+
+}
+
+
+
 @media (min-width:992px) {
   .bg_line::after {
     content: '';
