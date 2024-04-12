@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/image/logo.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
+        integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/root.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>The Travel Club</title>
+</head>
+
+<body class="bg_color">
+
+    <div id="preloader">
+        <div class="loader"></div>
+        <h5 class="mb-0 ff-Racing fs-64 color_emphasis text-center the_club">The Travel Club</h5>
+    </div>
+    <header class="bg_img position-relative">
+        <nav>
+            <div class="container1140 ">
+                <div class="d-flex align-items-center justify-content-between py-4">
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="pe-1">
+                            <img src="./assets/image/logo.png" alt="#">
+                        </div>
+                        <h2 class="mb-0 fs-30 fw-normal ff-Racing color_emphasis">
+                            The Travel Club
+                        </h2>
+                    </div>
+                    <input type="checkbox" id="menu-box" hidden>
+                    <label for="menu-box" class="icon-box cur-pointer" onclick="myFunction(this)">
+
+                        <span class="bar1"></span>
+                        <span class="bar2"></span>
+                        <span class="bar3"></span>
+
+                    </label>
+                    <ul class="d-flex p-0 mb-0 space gap-4 align-items-center mobile_view drop-in-2">
+                        <li><a class="mb-0 ff-Poppins fs-20 fw-normal color_emphasis text-center u_line webkit"
+                                href="#home">Home</a>
+                        </li>
+                        <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
+                                href="#token">Token</a>
+                        </li>
+                        <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
+                                href="#faq">FAQs</a>
+                        </li>
+                        <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
+                                href="#about">About</a>
+                        </li>
+                        <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
+                                href="#contact">Contact Us
+                            </a>
+                        </li>
+                        <li class="d-lg-none d-flex">
+                            <button
+                                class="mb-0 ff-Poppins color_emphasis fs-16 line-24 fw-semibold connect_wallet pulse">
+                                <span>Connect wallet</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="d-lg-flex d-none">
+                        <button class="mb-0 ff-Poppins color_emphasis fs-16 line-24 fw-semibold connect_wallet pulse">
+                            <span>Connect wallet</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+        <div class="container1140" id="home">
+            <div class="d-flex justify-content-center align-items-center pb-5">
+                <h1 class="mb-0 ff-worksans fs-64 fw-normal color_emphasis line-75 text-center mw_915 pt_120">
+                    Tokenized And Decentralized <span class="position-relative z-1 bg_line">Travel Platform</span>
+                </h1>
+            </div>
+            <div class=" d-flex justify-content-center align-items-center pb-4">
+                <div class="box">
+                    <div class="d-flex justify-content-center overflow-x-scroll scroll_w">
+                        <ul class="d-flex gap-4">
+                            <li class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium line-24 u_line2 cur-pointer">Stays
+                            </li>
+                            <li class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium line-24 u_line2 cur-pointer">
+                                Flights
+                            </li>
+                            <li class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium line-24 u_line2 cur-pointer">Cars
+                            </li>
+                            <li class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium line-24 u_line2 cur-pointer">
+                                Packages
+                            </li>
+                            <li class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium line-24 u_line2 cur-pointer">
+                                Things&nbsp;To&nbsp;Do</li>
+                            <li class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium line-24 u_line2 cur-pointer">
+                                Cruises
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="d-flex justify-content-end z-1 pt-3 pb-2">
+                        <div class="dropdown">
+                            <button class="dropbtn mb-0 ff-Poppins color_emphasis fs-14 fw-normal text-center">
+                                1 room, 2 travelers <span class="ms-1"><svg width="10" height="6" viewBox="0 0 10 6"
+                                        fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1 0.5L5 4.5L9 0.5" stroke="white" />
+                                    </svg>
+                                </span>
+                            </button>
+                            <div class="dropdown-content dropdown_bg">
+                                <a class="mb-0 ff-Poppins color_emphasis fs-14 fw-medium text-center" href="#">2
+                                    room, 4 travelers</a>
+                                <a class="mb-0 ff-Poppins color_emphasis fs-14 fw-medium text-center"
+                                    href="#">3&nbsp;room,
+                                    6 travelers</a>
+                                <a class="mb-0 ff-Poppins color_emphasis fs-14 fw-medium text-center"
+                                    href="#">4&nbsp;room,
+                                    8 travelers</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 col-lg-6 ">
+                            <div class="d-flex gap-3 going_to align-items-center">
+                                <span>
+                                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 1.5918C9.81276 1.59438 7.71584 2.4644 6.16923 4.01102C4.62261 5.55763 3.75259 7.65455 3.75001 9.8418C3.74739 11.6292 4.33124 13.3681 5.41201 14.7918C5.41201 14.7918 5.63701 15.088 5.67376 15.1308L12 22.5918L18.3293 15.127C18.3623 15.0873 18.588 14.7918 18.588 14.7918L18.5888 14.7895C19.669 13.3665 20.2526 11.6284 20.25 9.8418C20.2474 7.65455 19.3774 5.55763 17.8308 4.01102C16.2842 2.4644 14.1873 1.59438 12 1.5918ZM12 12.8418C11.4067 12.8418 10.8266 12.6658 10.3333 12.3362C9.83995 12.0066 9.45543 11.538 9.22837 10.9898C9.00131 10.4417 8.9419 9.83847 9.05765 9.25653C9.17341 8.67458 9.45913 8.14003 9.87869 7.72048C10.2982 7.30092 10.8328 7.0152 11.4147 6.89944C11.9967 6.78369 12.5999 6.8431 13.1481 7.07016C13.6962 7.29722 14.1648 7.68174 14.4944 8.17509C14.8241 8.66843 15 9.24845 15 9.8418C14.999 10.6371 14.6826 11.3996 14.1202 11.962C13.5578 12.5244 12.7954 12.8408 12 12.8418Z"
+                                            fill="#FAFAFA" />
+                                    </svg>
+
+                                </span>
+                                <input type="text" placeholder="Going to"
+                                    class="mb-0 ff-Poppins color_emphasis fs-16 fw-light go_input w-100">
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 py-lg-0 py-3">
+                            <div class="cleck_in d-flex gap-3 justify-content-between">
+                                <div class="d-flex gap-3  align-items-center">
+                                    <span>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.41667 9.45H4.27778V11.55H6.41667V9.45ZM10.6944 9.45H8.55556V11.55H10.6944V9.45ZM14.9722 9.45H12.8333V11.55H14.9722V9.45ZM17.1111 2.1H16.0417V0H13.9028V2.1H5.34722V0H3.20833V2.1H2.13889C1.57162 2.1 1.02759 2.32125 0.626466 2.71508C0.225346 3.1089 0 3.64305 0 4.2V18.9C0 19.457 0.225346 19.9911 0.626466 20.3849C1.02759 20.7787 1.57162 21 2.13889 21H17.1111C17.6784 21 18.2224 20.7787 18.6235 20.3849C19.0247 19.9911 19.25 19.457 19.25 18.9V4.2C19.25 3.64305 19.0247 3.1089 18.6235 2.71508C18.2224 2.32125 17.6784 2.1 17.1111 2.1ZM17.1111 18.9H2.13889V7.35H17.1111V18.9Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </span>
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-0 ff-Poppins color_emphasis fs-14 fw-lighter">
+                                            Check-in
+                                        </p>
+                                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-light ">
+                                            Jun <span class="counter-preview">29</span>
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="cur-pointer increment">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.125 13.4576H14.875C15.0041 13.4572 15.1306 13.4216 15.241 13.3546C15.3513 13.2877 15.4413 13.1919 15.5013 13.0776C15.5613 12.9632 15.5889 12.8347 15.5813 12.7059C15.5736 12.577 15.531 12.4527 15.458 12.3462L9.08296 3.13791C8.81875 2.75611 8.18267 2.75611 7.91775 3.13791L1.54275 12.3462C1.46896 12.4524 1.42569 12.5769 1.41763 12.7059C1.40958 12.835 1.43705 12.9638 1.49707 13.0784C1.55709 13.1929 1.64735 13.2889 1.75806 13.3557C1.86876 13.4226 1.99567 13.4578 2.125 13.4576Z"
+                                                fill="#F8F8F8" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="cur-pointer decrement">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.875 3.54239H2.125C1.99591 3.54279 1.86938 3.57839 1.75902 3.64536C1.64866 3.71233 1.55866 3.80813 1.49869 3.92244C1.43873 4.03676 1.41108 4.16527 1.41872 4.29413C1.42636 4.42299 1.46899 4.54733 1.54204 4.65376L7.91704 13.8621C8.18125 14.2439 8.81733 14.2439 9.08225 13.8621L15.4573 4.65376C15.531 4.54755 15.5743 4.42315 15.5824 4.29407C15.5904 4.165 15.5629 4.03618 15.5029 3.92162C15.4429 3.80706 15.3526 3.71114 15.2419 3.64428C15.1312 3.57742 15.0043 3.54218 14.875 3.54239ZM8.5 12.2145L3.4765 4.95905H13.5235L8.5 12.2145Z"
+                                                fill="#F8F8F8" />
+                                        </svg>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-lg-3 ">
+                            <div class="cleck_in d-flex gap-3 justify-content-between">
+                                <div class="d-flex gap-3  align-items-center">
+                                    <span>
+                                        <svg width="20" height="21" viewBox="0 0 20 21" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M6.41667 9.45H4.27778V11.55H6.41667V9.45ZM10.6944 9.45H8.55556V11.55H10.6944V9.45ZM14.9722 9.45H12.8333V11.55H14.9722V9.45ZM17.1111 2.1H16.0417V0H13.9028V2.1H5.34722V0H3.20833V2.1H2.13889C1.57162 2.1 1.02759 2.32125 0.626466 2.71508C0.225346 3.1089 0 3.64305 0 4.2V18.9C0 19.457 0.225346 19.9911 0.626466 20.3849C1.02759 20.7787 1.57162 21 2.13889 21H17.1111C17.6784 21 18.2224 20.7787 18.6235 20.3849C19.0247 19.9911 19.25 19.457 19.25 18.9V4.2C19.25 3.64305 19.0247 3.1089 18.6235 2.71508C18.2224 2.32125 17.6784 2.1 17.1111 2.1ZM17.1111 18.9H2.13889V7.35H17.1111V18.9Z"
+                                                fill="white" />
+                                        </svg>
+
+                                    </span>
+                                    <div class="d-flex flex-column">
+                                        <p class="mb-0 ff-Poppins color_emphasis fs-14 fw-lighter">
+                                            Check-in
+                                        </p>
+                                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-light ">
+                                            Jun 29
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <span class="cur-pointer">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M2.125 13.4576H14.875C15.0041 13.4572 15.1306 13.4216 15.241 13.3546C15.3513 13.2877 15.4413 13.1919 15.5013 13.0776C15.5613 12.9632 15.5889 12.8347 15.5813 12.7059C15.5736 12.577 15.531 12.4527 15.458 12.3462L9.08296 3.13791C8.81875 2.75611 8.18267 2.75611 7.91775 3.13791L1.54275 12.3462C1.46896 12.4524 1.42569 12.5769 1.41763 12.7059C1.40958 12.835 1.43705 12.9638 1.49707 13.0784C1.55709 13.1929 1.64735 13.2889 1.75806 13.3557C1.86876 13.4226 1.99567 13.4578 2.125 13.4576Z"
+                                                fill="#F8F8F8" />
+                                        </svg>
+
+                                    </span>
+                                    <span class="cur-pointer">
+                                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M14.875 3.54239H2.125C1.99591 3.54279 1.86938 3.57839 1.75902 3.64536C1.64866 3.71233 1.55866 3.80813 1.49869 3.92244C1.43873 4.03676 1.41108 4.16527 1.41872 4.29413C1.42636 4.42299 1.46899 4.54733 1.54204 4.65376L7.91704 13.8621C8.18125 14.2439 8.81733 14.2439 9.08225 13.8621L15.4573 4.65376C15.531 4.54755 15.5743 4.42315 15.5824 4.29407C15.5904 4.165 15.5629 4.03618 15.5029 3.92162C15.4429 3.80706 15.3526 3.71114 15.2419 3.64428C15.1312 3.57742 15.0043 3.54218 14.875 3.54239ZM8.5 12.2145L3.4765 4.95905H13.5235L8.5 12.2145Z"
+                                                fill="#F8F8F8" />
+                                        </svg>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="my-1">
+                        <span class="checkbox-wrapper-42">
+                            <input id="cbx-42" type="checkbox">
+                            <label class="cbx" for="cbx-42"></label>
+                            <label class="lbl mb-0 ff-Poppins color_emphasis fs-16 fw-light ps-2" for="cbx-42">Add a
+                                flight</label>
+
+                        </span>
+                        <span class="ms-3 checkbox-wrapper-42">
+                            <input id="cbx-44" type="checkbox">
+                            <label class="cbx" for="cbx-44"></label>
+                            <label class="lbl mb-0 ff-Poppins color_emphasis fs-16 fw-light ps-2" for="cbx-44">Add a
+                                car</label>
+
+                        </span>
+                    </div>
+                    <div class="d-flex justify-content-center align-items-center py-3">
+                        <button class="mb-0 ff-Poppins color_emphasis fs-16 fw-semibold line-24 search pulse">
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="img_shadow">
+            <img class="w-100" src="./assets/image/img-shadow.png" alt="#">
+        </div>
+        <div class="effect1  d-lg-flex d-none">
+            <img src="./assets/image/effect1.png" alt="#">
+        </div>
+    </header>
+    <section id="about" class="position-relative">
+        <div class="container1140 py-md-5 py-3">
+            <div class="row py-5 flex-md-row flex-column-reverse">
+                <div
+                    class="col-12 col-md-6 pt-4  d-flex justify-content-center flex-column mt-sm-0 mt-4 align-items-center d-md-block">
+                    <h5 class="mb-0 ff-worksans fs-48 fw-normal line-56 color_emphasis">
+                        About Us
+                    </h5>
+                    <p class="mb-0 ff-Poppins fs-16 fw-normal line-24 opacity-75 color_emphasis py-3 pra_1">
+                        We are building a web3 tokenized and decentralized travel platform.
+                        Our expertise is in search related sites, and blockchain technology. 
+                    </p>
+                    <p class="mb-0 ff-Poppins fs-16 fw-normal line-24 opacity-75 color_emphasis pra_1">
+                        We will be creating a DAO with rewards for users. A DAO is a Decentralized Autonomous
+                        Organization and is something fairly common in the web3 and blockchain space. A DAO can be
+                        described as a transparent governing body, where
+                        each member typically shares a common goal, which is the best interest of the platform.
+                    </p>
+                    <button class="mb-0 ff-Poppins fw-semibold fs-16 get_rew pulse color_emphasis mt-4">
+                        Get rewards
+                    </button>
+                </div>
+                <div class="col-12 col-md-6 overflow-hidden ">
+                    <div class="black">
+                        <img class="w-100" src="./assets/image/photo1.png" alt="#">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="effect2  d-lg-flex d-none">
+            <img class="w-100" src="./assets/image/effect2.png" alt="#">
+        </div>
+        <div class="effect3  d-lg-flex d-none">
+            <img class="w-100" src="./assets/image/effect3.png" alt="#">
+        </div>
+    </section>
+    <section class="position-relative">
+        <div class="container1140 py-lg-5 py-4">
+            <h2 class="mb-0 ff-worksans fs-48 fw-normal line-56 color_emphasis text-center pb-3">
+                Popular Destinations
+            </h2>
+            <div class="row py-lg-5 py-4">
+                <div class="col-12 col-md-4">
+                    <div class="mb-4 img_1 overflow-hidden bor_r position-relative">
+                        <img class="w-100 image-zoom" src="./assets/image/grid1.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium  line-24 hover_button">
+                                Cir. Shiloh, Hawaii 81063
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" img_1 overflow-hidden bor_r position-relative">
+                        <img class="w-100 image-zoom" src="./assets/image/grid2.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium  line-24 hover_button">
+                                Cir. Shiloh, Hawaii 81063
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 my-md-0 my-4">
+                    <div class="mb-4 img_1 overflow-hidden bor_r position-relative">
+                        <img class="w-100 image-zoom" src="./assets/image/grid3.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium  line-24 hover_button">
+                                Cir. Shiloh, Hawaii 81063
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" img_1 overflow-hidden bor_r position-relative">
+                        <img class="w-100 image-zoom" src="./assets/image/grid4.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium  line-24 hover_button">
+                                Cir. Shiloh, Hawaii 81063
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="mb-4 img_1 overflow-hidden bor_r position-relative">
+                        <img class="w-100 image-zoom" src="./assets/image/grid5.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium  line-24 hover_button">
+                                Cir. Shiloh, Hawaii 81063
+                            </p>
+                        </div>
+                    </div>
+                    <div class=" img_1 overflow-hidden bor_r position-relative">
+                        <img class="w-100 image-zoom" src="./assets/image/grid6.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium  line-24 hover_button">
+                                Cir. Shiloh, Hawaii 81063
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="effect4 ">
+            <img class="w-100" src="./assets/image/effect4.png" alt="#">
+        </div>
+        <div class="effect2">
+            <img class="w-100" src="./assets/image/effect2.png" alt="#">
+        </div>
+    </section>
+    <section class="position-relative">
+        <div class="container1140 py-lg-5 py-4">
+            <h2 class="mb-0 ff-worksans fs-48 fw-normal line-56 color_emphasis text-center pb-3 ">
+                Member Deals
+            </h2>
+            <div class="d-flex justify-content-between align-items-center responsive py-lg-5 py-4">
+                <div class="box_slider img_1">
+                    <div class="overflow-hidden position-relative border_lr">
+                        <img class=" image-zoom w-100" src="./assets/image/slider_img1.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium hover_button">
+                                50% OFF
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between py-3 px-3">
+                        <p class="mb-0 ff-worksans color_emphasis fs-24 fw-normal">
+                            $1,100 <span class="opacity-50">$1,999</span>
+                        </p>
+                        <div class=" d-flex align-items-center gap-2">
+                            <span class="black">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
+                                        fill="#FFAA4A" />
+                                </svg>
+
+                            </span>
+                            <p class="mb-0 ff-worksans fs-20 fw-normal color_emphasis">
+                                4.9
+                            </p>
+                        </div>
+                    </div>
+                    <p class="mb-0 ff-Poppins fw-semibold fs-20 color_emphasis px-3 pb-3">
+                        Et fringilla mauris hac dignissi amet facilisi.
+                    </p>
+                </div>
+                <div class="box_slider img_1">
+                    <div class="overflow-hidden position-relative border_lr">
+                        <img class=" image-zoom w-100" src="./assets/image/slider_img2.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium hover_button">
+                                50% OFF
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between py-3 px-3">
+                        <p class="mb-0 ff-worksans color_emphasis fs-24 fw-normal">
+                            $1,100 <span class="opacity-50">$1,999</span>
+                        </p>
+                        <div class=" d-flex align-items-center gap-2">
+                            <span class="black">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
+                                        fill="#FFAA4A" />
+                                </svg>
+
+                            </span>
+                            <p class="mb-0 ff-worksans fs-20 fw-normal color_emphasis">
+                                4.9
+                            </p>
+                        </div>
+                    </div>
+                    <p class="mb-0 ff-Poppins fw-semibold fs-20 color_emphasis px-3 pb-3">
+                        Et fringilla mauris hac dignissi amet facilisi.
+                    </p>
+                </div>
+                <div class="box_slider img_1">
+                    <div class="overflow-hidden position-relative border_lr">
+                        <img class=" image-zoom w-100" src="./assets/image/slider_img3.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium hover_button">
+                                50% OFF
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between py-3 px-3">
+                        <p class="mb-0 ff-worksans color_emphasis fs-24 fw-normal">
+                            $1,100 <span class="opacity-50">$1,999</span>
+                        </p>
+                        <div class=" d-flex align-items-center gap-2">
+                            <span class="black">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
+                                        fill="#FFAA4A" />
+                                </svg>
+
+                            </span>
+                            <p class="mb-0 ff-worksans fs-20 fw-normal color_emphasis">
+                                4.9
+                            </p>
+                        </div>
+                    </div>
+                    <p class="mb-0 ff-Poppins fw-semibold fs-20 color_emphasis px-3 pb-3">
+                        Et fringilla mauris hac dignissi amet facilisi.
+                    </p>
+                </div>
+                <div class="box_slider img_1">
+                    <div class="overflow-hidden position-relative border_lr">
+                        <img class=" image-zoom w-100" src="./assets/image/slider_img2.png" alt="#">
+                        <div class="text_pos">
+                            <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-medium hover_button">
+                                50% OFF
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between py-3 px-3">
+                        <p class="mb-0 ff-worksans color_emphasis fs-24 fw-normal">
+                            $1,100 <span class="opacity-50">$1,999</span>
+                        </p>
+                        <div class=" d-flex align-items-center gap-2">
+                            <span class="black">
+                                <svg width="22" height="20" viewBox="0 0 22 20" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M11 0L13.4697 7.60081H21.4616L14.996 12.2984L17.4656 19.8992L11 15.2016L4.53436 19.8992L7.00402 12.2984L0.538379 7.60081H8.53035L11 0Z"
+                                        fill="#FFAA4A" />
+                                </svg>
+
+                            </span>
+                            <p class="mb-0 ff-worksans fs-20 fw-normal color_emphasis">
+                                4.9
+                            </p>
+                        </div>
+                    </div>
+                    <p class="mb-0 ff-Poppins fw-semibold fs-20 color_emphasis px-3 pb-3">
+                        Et fringilla mauris hac dignissi amet facilisi.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="effect5">
+            <img class="w-100" src="./assets/image/effect1.png" alt="#">
+        </div>
+        <div class="effect6 d-lg-flex d-none">
+            <img class="w-100" src="./assets/image/effect2.png" alt="#">
+        </div>
+        <div class="effect7 d-lg-flex d-none">
+            <img class="w-100" src="./assets/image/effect3.png" alt="#">
+        </div>
+    </section>
+    <section class="bg-imag_2 position-relative" id="token">
+        <div class="container1140 py-lg-5 py-4">
+            <h4 class="mb-0 ff-worksans fs-48 fw-normal line-56 color_emphasis text-center pt-5 pb-4">
+                Tokenomics: Powering Digital Economies
+            </h4>
+            <div class="row py-lg-5 py-4">
+                <div class="col-12 col-lg-5 py-4 ">
+                    <div class="gallery">
+                        <img src="./assets/image/circle_img.png" alt="#">
+                        <img src="./assets/image/circle_img.png" alt="#">
+                        <img src="./assets/image/circle_img.png" alt="#">
+                        <img src="./assets/image/circle_img.png" alt="#">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-7">
+                    <div class="d-flex justify-content-center align-items-center pt-lg-0 pt-4 pb-5">
+                        <div class="box_2">
+                            <h3 class="mb-0 ff-worksans fw-normal line-42 color_emphasis text-center">
+                                Travel Club Metrics
+                            </h3>
+                            <div class="d-flex gap-5">
+                                <div class="pt-3">
+                                    <p class="mb-0 ff-Poppins color_emphasis opacity-75 fs-20 fw-normal line-30 ">
+                                        Max supply:
+                                    </p>
+                                    <p class="mb-0 ff-Poppins color_emphasis opacity-75 fs-20 fw-normal line-30 py-3">
+                                        Total supply:
+                                    </p>
+                                    <p class="mb-0 ff-Poppins color_emphasis opacity-75 fs-20 fw-normal line-30">
+                                        Circulating supply:
+                                    </p>
+                                </div>
+
+                                <div class="pt-3">
+                                    <p class="mb-0 ff-Poppins color_emphasis fs-20 fw-semibold line-30">
+                                        700 000 000
+                                    </p>
+                                    <p class="mb-0 ff-Poppins color_emphasis fs-20 fw-semibold line-30 py-3">
+                                        345 620 131
+                                    </p>
+                                    <p class="mb-0 ff-Poppins color_emphasis fs-20 fw-semibold line-30">
+                                        307 909 912
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="row pt-4 ">
+                                <div class="col-6 col-sm-5">
+                                    <div class="border_left-1 my-sm-4 my-3 py-0 ps-sm-4 ps-2">
+                                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75">
+                                            Farms/Launchpools
+                                        </p>
+                                        <p class="mb-0 ff-worksans color_emphasis fs-32 fw-normal">
+                                            80.7%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-5">
+                                    <div class="border_left-2 my-sm-4 my-3 py-0 ps-sm-4 ps-2">
+                                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75">
+                                            Referral Program
+                                        </p>
+                                        <p class="mb-0 ff-worksans color_emphasis fs-32 fw-normal">
+                                            4.3%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-2">
+                                    <div class="border_left-3 my-sm-4 my-3 py-0 ps-sm-4 ps-2">
+                                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75">
+                                            Team
+                                        </p>
+                                        <p class="mb-0 ff-worksans color_emphasis fs-32 fw-normal">
+                                            9%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-5">
+                                    <div class="border_left-4 my-sm-4 my-3 py-0 ps-sm-4 ps-2">
+                                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75">
+                                            SAFU
+                                        </p>
+                                        <p class="mb-0 ff-worksans color_emphasis fs-32 fw-normal">
+                                            1%
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-sm-5">
+                                    <div class="border_left-5 my-sm-4 my-3 py-0 ps-sm-4 ps-2">
+                                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75">
+                                            Investing Fund
+                                        </p>
+                                        <p class="mb-0 ff-worksans color_emphasis fs-32 fw-normal">
+                                            5%
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="effect8">
+            <img class="w-100" src="./assets/image/effect1.png" alt="#">
+        </div>
+    </section>
+    <section class="position-relative">
+        <div class="container1140 pb-lg-5 pb-sm-4 pb-3">
+            <h3 class="mb-0 ff-worksans fs-48 fw-normal line-56 color_emphasis text-center pt-5 pb-4">
+                Meet Our Team
+            </h3>
+            <div class="d-flex justify-content-between align-items-center responsive_2 py-5">
+                <div class="box_slider img_1 slider_bor">
+                    <div class="overflow-hidden border_lr">
+                        <img class="image-zoom w-100" src="./assets/image/image_1.png" alt="#">
+                    </div>
+                    <div class="p-3">
+                        <p class="mb-0 ff-worksans color_emphasis fw-normal fs-24">
+                            Darlene Robertson
+                        </p>
+                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75">
+                            CEO & Founder
+                        </p>
+                    </div>
+                </div>
+                <div class="box_slider img_1 slider_bor">
+                    <div class="overflow-hidden border_lr">
+                        <img class="image-zoom w-100" src="./assets/image/image_2.png" alt="#">
+                    </div>
+                    <div class="p-3">
+                        <p class="mb-0 ff-worksans color_emphasis fw-normal fs-24">
+                            Cameron&nbsp;Williamson
+                        </p>
+                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75">
+                            CEO & Founder
+                        </p>
+                    </div>
+                </div>
+                <div class="box_slider img_1 slider_bor">
+                    <div class="overflow-hidden border_lr">
+                        <img class="image-zoom w-100" src="./assets/image/image_3.png" alt="#">
+                    </div>
+                    <div class="p-3">
+                        <p class="mb-0 ff-worksans color_emphasis fw-normal fs-24">
+                            Brooklyn Simmons
+                        </p>
+                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75">
+                            CEO & Founder
+                        </p>
+                    </div>
+                </div>
+                <div class="box_slider img_1 slider_bor">
+                    <div class="overflow-hidden border_lr">
+                        <img class="image-zoom w-100" src="./assets/image/image_2.png" alt="#">
+                    </div>
+                    <div class="p-3">
+                        <p class="mb-0 ff-worksans color_emphasis fw-normal fs-24">
+                            Cameron&nbsp;Williamson
+                        </p>
+                        <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75">
+                            CEO & Founder
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="effect9">
+            <img class="w-100" src="./assets/image/effect3.png" alt="#">
+        </div>
+        <div class="effect10">
+            <img class="w-100" src="./assets/image/effect2.png" alt="#">
+        </div>
+        <div class="effect11">
+            <img class="w-100" src="./assets/image/effect1.png" alt="#">
+        </div>
+    </section>
+    <section class="position-relative" id="faq">
+        <div class="container1140 py-lg-5 py-4">
+            <h2 class="mb-0 ff-worksans fs-48 fw-normal line-56 text-center color_emphasis py-5">
+                Frequently Asked Questions
+            </h2>
+            <div class=" d-flex justify-content-center align-items-center pb-120">
+                <div class="accordion mw_750 w-100" id="accordionExample">
+                    <div class="accordion-item border_accordian ">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button py-4 collapsed px-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <span class=" mb-0 ff-worksans fs-20 fw-normal color_emphasis mw-565">
+                                    Q1. Rhoncus morbi sodales risus eget integer malesuada ultricies. Magnis at ornare
+                                    sit netus velit.
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div
+                                class="accordion-body mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75 mw-565 px-0">
+                                At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat t
+                                empus urna laoreet mattis risus tempus. Imperdiet a integer viverra rhoncus viverra
+                                nunc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border_accordian">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button py-4 collapsed px-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <span class=" mb-0 ff-worksans fs-20 fw-normal color_emphasis mw-565">
+                                    Q2. Habitant elementum nibh vitae adipiscing volutpat a scelerisque neque.
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div
+                                class="accordion-body mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75 mw-565 px-0">
+                                At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
+                                laoreet mattis risus
+                                tempus. Imperdiet a integer viverra rhoncus viverra nunc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border_accordian">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button py-4 collapsed px-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <span class=" mb-0 ff-worksans fs-20 fw-normal color_emphasis mw-565">
+                                    Q3. Condimentum cursus urna nulla et eget enim.
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div
+                                class="accordion-body mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75 mw-565 px-0">
+                                At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
+                                laoreet
+                                mattis risus tempus. Imperdiet a integer viverra rhoncus viverra nunc.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item border_accordian">
+                        <h2 class="accordion-header" id="headingfour">
+                            <button class="accordion-button py-4 collapsed px-0" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapsefour">
+                                <span class=" mb-0 ff-worksans fs-20 fw-normal color_emphasis mw-565">
+                                    Q4.Vel egestas hendrerit pellentesque molestie fusce aliquet gravida proin.
+                                </span>
+                            </button>
+                        </h2>
+                        <div id="collapsefour" class="accordion-collapse collapse " aria-labelledby="headingfour"
+                            data-bs-parent="#accordionExample">
+                            <div
+                                class="accordion-body mb-0 ff-Poppins color_emphasis fs-16 fw-normal opacity-75 mw-565 px-0">
+                                At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna
+                                laoreet mattis
+                                risus tempus. Imperdiet a integer viverra rhoncus viverra nunc.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="effect12">
+            <img class="w-100" src="./assets/image/effect1.png" alt="#">
+        </div>
+        <div class="effect13">
+            <img class="w-100" src="./assets/image/effect3.png" alt="#">
+        </div>
+    </section>
+    <footer class="bg-black" id="contact">
+        <div class="container1140 py-5">
+            <div class="row">
+                <div class="col-12 col-lg-3">
+                    <div class="d-flex align-items-center gap-1">
+                        <div class="pe-1">
+                            <img src="./assets/image/logo.png" alt="#">
+                        </div>
+                        <h2 class="mb-0 ff-Racing fs-24 fw-medium line-35 color_emphasis">
+                            The Travel Club
+                        </h2>
+                    </div>
+
+                    <p class="mb-0 ff-Poppins fs-16 fw-normal color_emphasis opacity-75 py-4 para_5">
+                        At congue consectetur pharetra morbi. Amet blandit vestibulum feugiat tempus urna laoreet
+                    </p>
+                </div>
+                <div class="col-6 col-lg-2 col-md-3">
+                    <div class="ps-lg-4">
+                        <h3 class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 pb-4 pt-2">
+                            Company
+                        </h3>
+                        <ul class="m-0 px-0 ">
+                            <li>
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#about">
+                                    About
+                                </a>
+                            </li>
+                            <li class="py-3">
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#privacy">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#partnership">
+                                    Partnership
+                                </a>
+                            </li>
+                            <li class="py-3">
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#faq">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#contact">
+                                    Contact
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h3 class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 pb-4 pt-2">
+                        Contact Us
+                    </h3>
+                    <p class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 pra_4">
+                        4517 Washington Ave. Manchester, Kentucky 39495
+                    </p>
+                    <div class="pt-3">
+                        <span
+                            class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 pt-3 u_line2 cur-pointer">
+                            +123 456 7890, +123 456 7890
+                        </span>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-3 mt-md-0 mt-3">
+                    <div class="ps-md-4">
+                        <h3 class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 pb-4 pt-2">
+                            Quick Links
+                        </h3>
+                        <ul class="m-0 px-0 ">
+                            <li>
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#home">
+                                    Home
+                                </a>
+                            </li>
+                            <li class="py-3">
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#about">
+                                    About
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#token">
+                                    Token
+                                </a>
+                            </li>
+                            <li class="py-3">
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#faq">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 opacity-75 u_line2"
+                                    href="#popular">
+                                    Popular Destinations
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6 col-lg-2 col-md-3 mt-md-0 mt-3">
+                    <h3 class="mb-0 ff-Poppins color_emphasis fs-16 fw-normal line-25 pb-4 pt-2">
+                        Social Share
+                    </h3>
+                    <div class="d-flex gap-3">
+                        <span class="grow">
+                            <a href="https://twitter.com/" target="_blank">
+                                <svg width="28" height="24" viewBox="0 0 28 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M25.804 1.76871C26.0929 1.77112 26.3756 1.8525 26.6215 2.00405C26.8675 2.1556 27.0673 2.37154 27.1993 2.62849C27.3313 2.88544 27.3905 3.17361 27.3705 3.46181C27.3505 3.75 27.2521 4.02723 27.0858 4.26348L25.49 6.5316C25.392 14.3207 22.787 19.6089 17.7469 22.2507C15.3451 23.4443 12.6915 24.0426 10.0099 23.9951C6.69401 24.0713 3.41735 23.2659 0.514696 21.6611C0.319433 21.5299 0.168521 21.3425 0.0818546 21.1238C-0.004812 20.9051 -0.0231644 20.6653 0.029217 20.4359C0.078256 20.2031 0.196719 19.9907 0.368972 19.8267C0.541225 19.6626 0.759171 19.5546 0.994049 19.517C2.944 19.2447 4.86417 18.7904 6.72944 18.1601C-1.62937 14.2931 0.193085 5.60046 0.989454 2.9311C1.06709 2.66608 1.21307 2.42615 1.41274 2.23538C1.61241 2.04462 1.85874 1.90973 2.12702 1.84425C2.39529 1.77877 2.67607 1.78501 2.94118 1.86234C3.20628 1.93967 3.44638 2.08537 3.63738 2.28481C6.08413 4.80598 9.32824 6.40233 12.8186 6.80268C12.7567 5.8647 12.9016 4.92458 13.2433 4.04886C13.585 3.17313 14.115 2.38321 14.7957 1.73501C15.9751 0.615757 17.5407 -0.0056661 19.1666 3.89365e-05C20.7925 0.00574397 22.3537 0.638138 23.5252 1.76564L25.804 1.76871ZM2.23148 20.8693C5.0831 22.2048 11.7665 23.6551 17.0363 20.8938C21.5618 18.5215 23.8912 13.6469 23.9601 6.40449C23.9632 6.16501 24.039 5.93214 24.1776 5.73677L25.8331 3.38135L25.7703 3.30018C24.977 3.28946 24.1944 3.27874 23.3965 3.30018C23.0854 3.29306 22.7876 3.17272 22.5588 2.96173C21.6772 2.06809 20.4802 1.55594 19.2251 1.53532C17.9699 1.5147 16.7568 1.98726 15.8463 2.85146C15.2615 3.40764 14.8244 4.10067 14.5744 4.86802C14.3244 5.63537 14.2694 6.45289 14.4144 7.2468C14.4411 7.3947 14.4337 7.54673 14.3928 7.69135C14.3519 7.83598 14.2787 7.96939 14.1785 8.08146C14.0826 8.19451 13.9604 8.28227 13.8226 8.33701C13.6848 8.39176 13.5357 8.41181 13.3883 8.39541C9.27355 8.10827 5.40991 6.31116 2.53931 3.34919C1.51322 6.5316 0.211462 14.2135 8.4646 17.232C8.63829 17.2944 8.79054 17.405 8.90342 17.551C9.0163 17.697 9.08509 17.8722 9.1017 18.056C9.12037 18.237 9.08707 18.4195 9.0057 18.5823C8.92433 18.745 8.79825 18.8812 8.64225 18.9749C6.6255 19.9583 4.45886 20.5986 2.23148 20.8693Z"
+                                        fill="#FAFAFA" />
+                                </svg>
+                            </a>
+                        </span>
+                        <span class="grow">
+                            <a href="https://www.facebook.com/login/" target="_blank">
+                                <svg width="16" height="26" viewBox="0 0 16 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M14.5744 1H10.9744C9.38309 1 7.85697 1.63214 6.73175 2.75736C5.60653 3.88258 4.97439 5.4087 4.97439 7V10.6H1.37439V15.4H4.97439V25H9.77439V15.4H13.3744L14.5744 10.6H9.77439V7C9.77439 6.68174 9.90082 6.37652 10.1259 6.15147C10.3509 5.92643 10.6561 5.8 10.9744 5.8H14.5744V1Z"
+                                        stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </span>
+                        <span class="grow">
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <svg width="27" height="26" viewBox="0 0 27 26" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M13.5743 18.3327C14.9888 18.3327 16.3453 17.7708 17.3455 16.7706C18.3457 15.7704 18.9076 14.4138 18.9076 12.9993C18.9076 11.5849 18.3457 10.2283 17.3455 9.22811C16.3453 8.22792 14.9888 7.66602 13.5743 7.66602C12.1598 7.66602 10.8033 8.22792 9.80306 9.22811C8.80287 10.2283 8.24097 11.5849 8.24097 12.9993C8.24097 14.4138 8.80287 15.7704 9.80306 16.7706C10.8033 17.7708 12.1598 18.3327 13.5743 18.3327Z"
+                                        stroke="#FAFAFA" stroke-width="1.5" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                    <path
+                                        d="M1.57434 18.3333V7.66667C1.57434 5.89856 2.27672 4.20286 3.52696 2.95262C4.7772 1.70238 6.4729 1 8.24101 1H18.9077C20.6758 1 22.3715 1.70238 23.6217 2.95262C24.872 4.20286 25.5743 5.89856 25.5743 7.66667V18.3333C25.5743 20.1014 24.872 21.7971 23.6217 23.0474C22.3715 24.2976 20.6758 25 18.9077 25H8.24101C6.4729 25 4.7772 24.2976 3.52696 23.0474C2.27672 21.7971 1.57434 20.1014 1.57434 18.3333Z"
+                                        stroke="#FAFAFA" stroke-width="1.5" />
+                                    <path d="M20.9077 5.68068L20.921 5.66602" stroke="#FAFAFA" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <button class="pulse" onclick="topFunction()" id="myBtn" title="Go to top">
+        <img src="./assets/image/topicon.svg" alt="#">
+    </button>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+        integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script>
+        function myFunction(x) {
+            x.classList.toggle("change");
+        }
+    </script>
+
+
+    <script src="./assets/js/app.js">
+    </script>
+</body>
+
+</html>
