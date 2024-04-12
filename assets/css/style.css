@@ -892,8 +892,6 @@
   }
 }
 
-
-
 @media (max-width:992px) {
   ul.mobile_view {
     flex-direction: column;
