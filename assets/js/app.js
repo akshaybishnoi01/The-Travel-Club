@@ -131,8 +131,8 @@ window.addEventListener("load", function () {
 $(document).ready(function(){
   $(window).scroll(function(){
   	var scroll = $(window).scrollTop();
-	  if (scroll > 300) {
-	    $(".nav-bg").css("background" , "#081324");
+	  if (scroll > 80) {
+	    $(".nav-bg").css("background" , "#252552");
 	  }
 
 	  else{

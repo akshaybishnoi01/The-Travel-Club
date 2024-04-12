@@ -879,14 +879,15 @@
   background:transparent;
   width:100%;
   transition: all .6s;
+  z-index: 50;
 }
 
 .blue{
   position:fixed;
   top:0;
-  background: #081324;
+  background: #252552;
   width:100%;
-
+z-index: 50;
 }
 
 
