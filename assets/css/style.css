@@ -867,27 +867,21 @@
   z-index: 100;
 }
 
-.the_club {
-  top: 80%;
-  position: fixed;
-  left: 35%;
-}
-
 .nav-bg {
-  position:fixed;
-  top:0;
-  background:transparent;
-  width:100%;
+  position: fixed;
+  top: 0;
+  background: transparent;
+  width: 100%;
   transition: all .6s;
   z-index: 50;
 }
 
-.blue{
-  position:fixed;
-  top:0;
+.blue {
+  position: fixed;
+  top: 0;
   background: #252552;
-  width:100%;
-z-index: 50;
+  width: 100%;
+  z-index: 50;
 }
 
 

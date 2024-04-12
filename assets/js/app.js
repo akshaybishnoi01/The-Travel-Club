@@ -128,15 +128,15 @@ window.addEventListener("load", function () {
 });
 
 
-$(document).ready(function(){
-  $(window).scroll(function(){
-  	var scroll = $(window).scrollTop();
-	  if (scroll > 80) {
-	    $(".nav-bg").css("background" , "#252552");
-	  }
+$(document).ready(function () {
+  $(window).scroll(function () {
+    var scroll = $(window).scrollTop();
+    if (scroll > 80) {
+      $(".nav-bg").css("background", "#252552");
+    }
 
-	  else{
-		  $(".nav-bg").css("background" , "transparent");  	
-	  }
+    else {
+      $(".nav-bg").css("background", "transparent");
+    }
   })
 })
