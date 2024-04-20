@@ -1,20 +1,4 @@
-const display = document.querySelector('.counter-preview');
-const incrementBtn = document.querySelector('.increment');
-const decrementBtn = document.querySelector('.decrement');
 
-incrementBtn.addEventListener('click', increment);
-decrementBtn.addEventListener('click', decrement);
-
-let value = 29;
-function increment() {
-  value += 1;
-  display.textContent = value;
-}
-
-function decrement() {
-  value -= 1;
-  display.textContent = value;
-}
 
 
 $('.responsive').slick({
@@ -140,3 +124,52 @@ $(document).ready(function () {
     }
   })
 })
+
+
+// ==============chng date and month
+
+const monthNames = ["Jan", "Feb", "Mar", "April", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const shownDate = document.querySelector("#data");
+const increment = document.getElementById("increment");
+const decrement = document.getElementById("decrement");
+
+const currentDate = new Date(2024, 5, 29);
+function updateData() {
+  const newDate = currentDate.getDate()
+  const month = currentDate.getMonth();
+  shownDate.innerHTML = `${monthNames[month]} ${newDate}`
+}
+updateData()
+
+increment.addEventListener("click", function () {
+  currentDate.setDate(currentDate.getDate() + 1);
+  updateData()
+})
+decrement.addEventListener("click", function () {
+  currentDate.setDate(currentDate.getDate() - 1);
+  updateData()
+})
+
+
+const Monthname = ["Jan", "Feb", "Mar", "April", "May", "Jun", "July", "Aug", "Sep", "Oct", "Nov", "Dec"];
+const data = document.getElementById("Data");
+const increment2 = document.getElementById("increment2");
+const decrement2 = document.getElementById("decrement2");
+
+const date = new Date(2024, 5, 29);
+function mydata() {
+  const newdate = date.getDate()
+  const months = date.getMonth();
+  data.innerHTML = `${Monthname[months]} ${newdate}`
+}
+mydata()
+
+increment2.addEventListener("click", function () {
+  date.setDate(date.getDate() + 1);
+  mydata()
+})
+decrement2.addEventListener("click", function () {
+  date.setDate(date.getDate() - 1);
+  mydata()
+})
+

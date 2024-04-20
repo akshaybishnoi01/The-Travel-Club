@@ -165,9 +165,10 @@
 
 .going_to {
   background-color: var(--color-bgcol-);
-  border: 1px solid var(--color-emphasis-);
+  border: 1px solid #AAA9B7;
   border-radius: 8px;
   padding: 12px;
+  height: 48px;
 }
 
 .go_input {
@@ -178,12 +179,13 @@
 
 .cleck_in {
   background-color: var(--color-bgcol-);
-  border: 1px solid var(--color-emphasis-);
+  border: 1px solid #AAA9B7;
   border-radius: 8px;
   padding-left: 12px;
   padding-right: 12px;
   padding-top: 2px;
   padding-bottom: 3px;
+  height: 48px;
 }
 
 .search {
@@ -200,13 +202,14 @@
   background-color: var(--color-lightwh-);
   max-width: 930px;
   width: 100%;
+  z-index: 2;
 }
 
 .img_shadow {
   position: absolute;
   left: 0;
   bottom: 0%;
-  z-index: -1;
+  z-index: 0;
 }
 
 .pra_1 {
@@ -329,7 +332,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  margin: 0 5px;
+  margin: 0 12px;
   padding: 0;
   cursor: pointer;
 }
@@ -361,7 +364,7 @@
   opacity: 1;
   height: 15px;
   background-color: var(--color-btn-);
-  transform: translateX(-38px);
+  transform: translateX(-16px);
   opacity: 1;
   top: -5%;
 }
@@ -373,83 +376,6 @@
   background-size: cover;
 }
 
-.gallery {
-
-  display: grid;
-  width: 100%;
-  aspect-ratio: 1;
-  overflow: hidden;
-  padding: calc(var(--s)/20);
-  border-radius: 50%;
-  position: relative;
-  clip-path: circle(49.5%);
-  /* to avoid a few glitch cause by overflow: hidden */
-}
-
-.gallery::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: inherit;
-  border-radius: inherit;
-  background-image: url(../image/border_circle.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.gallery>img {
-  grid-area: 1/1;
-  width: 100%;
-
-  object-fit: cover;
-  border-radius: inherit;
-  transform-origin: 50% 120.7%;
-}
-
-.gallery::after,
-.gallery>img {
-  animation: m 8s infinite cubic-bezier(.5, -0.2, .5, 1.2);
-}
-
-.gallery>img:nth-child(2) {
-  animation-delay: -2s
-}
-
-.gallery>img:nth-child(3) {
-  animation-delay: -4s
-}
-
-.gallery>img:nth-child(4) {
-  animation-delay: -6s
-}
-
-@keyframes m {
-
-  0%,
-  3% {
-    transform: rotate(0)
-  }
-
-  22%,
-  27% {
-    transform: rotate(-90deg)
-  }
-
-  47%,
-  52% {
-    transform: rotate(-180deg)
-  }
-
-  72%,
-  77% {
-    transform: rotate(-270deg)
-  }
-
-  98%,
-  100% {
-    transform: rotate(-360deg)
-  }
-}
 
 .box_2 {
   background-color: #1A1463;
@@ -881,6 +807,7 @@
   z-index: 50;
 }
 
+
 @media (min-width:992px) {
   .bg_line::after {
     content: '';
@@ -917,7 +844,7 @@
     transition: all 0.5s linear;
     z-index: 50;
   }
-  
+
   .icon-box {
     z-index: 51;
     height: 30px;
