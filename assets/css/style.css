@@ -828,59 +828,89 @@
 }
 
 @media (max-width:992px) {
-  ul.mobile_view {
-    flex-direction: column;
-    height: 100%;
+  .mobile_view {
+    position: fixed;
+    backdrop-filter: blur(40px);
+    /* background: var(--color-bgcol-); */
+    height: 100vh;
     width: 100%;
-    background: transparent;
-    backdrop-filter: blur(25px);
-    color: var(--color-emphasis-);
-    bottom: 0;
-    display: flex;
-    right: -100%;
+    top: 0;
+    left: -100%;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: fixed;
-    transition: all 0.5s linear;
-    z-index: 50;
+    transition: all 400ms linear;
+    /* background-color: #060400; */
+    z-index: 4;
   }
 
-  .icon-box {
-    z-index: 51;
-    height: 30px;
-    width: 40px;
-    flex-direction: column;
-    display: flex;
-    justify-content: space-between;
+  .menu {
+
+    z-index: 160;
   }
 
-  .bar1,
-  .bar2,
-  .bar3 {
-    width: 100%;
-    background: var(--color-emphasis-);
+  .overflow_hidden {
+    overflow: hidden;
+  }
+
+  .menu span:nth-child(1) {
     height: 4px;
-    transition: all 0.4s linear;
+    width: 35px;
+    background: var(--color-emphasis-);
+    display: block;
+    border-radius: 30px;
   }
 
-  .change .bar1 {
-    transform: translate(0, 11px) rotate(-45deg);
+  .menu span:nth-child(2) {
+    height: 4px;
+    width: 35px;
+    background: var(--color-emphasis-);
+    display: block;
+    border-radius: 30px;
   }
 
-  .change .bar2 {
+  .menu span:nth-child(3) {
+    height: 4px;
+    width: 35px;
+    background: var(--color-emphasis-);
+    display: block;
+    border-radius: 30px;
+  }
+
+  .menu span {
+    transition: 300ms linear;
+  }
+
+  .cross span:nth-child(1) {
+    transform: rotate(42deg) translateY(16px);
+    transition: 300ms linear;
+  }
+
+  .cross span:nth-child(2) {
+    transform: translateX(-100%);
     opacity: 0;
+    transition: 10ms linear;
   }
 
-  .change .bar3 {
-    transform: translate(0, -15px) rotate(45deg);
+  .cross span:nth-child(3) {
+    transform: rotate(-43deg) translateY(-15px);
+    transition: 300ms linear;
   }
 
-  #menu-box:checked~ul.mobile_view {
-    right: 0;
+  .right {
+    left: 0%;
   }
 
-  .space {
-    gap: 30px;
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .gap_36 {
+    gap: 12px;
+  }
+
+  .over_flow_x {
+    overflow-x: scroll;
   }
 
   .col-revrce {

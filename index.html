@@ -34,38 +34,41 @@
                             The Travel Club
                         </h2>
                     </div>
-                    <input type="checkbox" id="menu-box" hidden>
-                    <label for="menu-box" class="icon-box cur-pointer" onclick="myFunction(this)">
+                    <div class="menu  cur-pointer" onclick="openNav()">
 
-                        <span class="bar1"></span>
-                        <span class="bar2"></span>
-                        <span class="bar3"></span>
+                        <span></span>
+                        <span class="my-2"></span>
+                        <span></span>
+                    </div>
 
-                    </label>
-                    <ul class="d-flex p-0 mb-0 space gap-4 align-items-center mobile_view drop-in-2">
-                        <li><a class="mb-0 ff-Poppins fs-20 fw-normal color_emphasis text-center u_line webkit "
-                                href="#home">Home</a>
-                        </li>
-                        <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
-                                href="#token">Token</a>
-                        </li>
-                        <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
-                                href="#faq">FAQs</a>
-                        </li>
-                        <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
-                                href="#about">About</a>
-                        </li>
-                        <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
-                                href="#contact">Contact Us
-                            </a>
-                        </li>
-                        <li class="d-lg-none d-flex">
-                            <button
-                                class="mb-0 ff-Poppins color_emphasis fs-16 line-24 fw-semibold connect_wallet pulse">
-                                <span>Connect wallet</span>
-                            </button>
-                        </li>
-                    </ul>
+                    <div class="mobile_view d-flex justify-content-center align-content-center" id="navbar">
+                        <ul
+                            class="d-flex flex-lg-row flex-column  p-0 mb-0 justify-content-center  gap-4 align-items-center ">
+                            <li><a class="mb-0 ff-Poppins fs-20 fw-normal color_emphasis text-center u_line webkit "
+                                    href="#home" onclick="openNav()">Home</a>
+                            </li>
+                            <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
+                                    href="#token" onclick="openNav()">Token</a>
+                            </li>
+                            <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
+                                    href="#faq " onclick="openNav()">FAQs</a>
+                            </li>
+                            <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
+                                    href="#about" onclick="openNav()">About</a>
+                            </li>
+                            <li><a class="mb-0 ff-Poppins fs-16 fw-medium color_emphasis text-center u_line webkit"
+                                    href="#contact" onclick="openNav()">Contact Us
+                                </a>
+                            </li>
+                            <li class="d-lg-none d-flex">
+                                <button
+                                    class="mb-0 ff-Poppins color_emphasis fs-16 line-24 fw-semibold connect_wallet pulse">
+                                    <span>Connect wallet</span>
+                                </button>
+                            </li>
+                        </ul>
+
+                    </div>
                     <div class="d-lg-flex d-none">
                         <button class="mb-0 ff-Poppins color_emphasis fs-16 line-24 fw-semibold connect_wallet pulse">
                             <span>Connect wallet</span>
@@ -949,11 +952,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script>
-        function myFunction(x) {
-            x.classList.toggle("change");
-        }
-    </script>
+
     <script src="./assets/js/app.js">
     </script>
 </body>
